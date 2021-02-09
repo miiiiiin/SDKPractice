@@ -1,0 +1,6 @@
+use_frameworks!
+target 'SDKPractice_Tests' do
+  pod 'SDKPractice', :path => '../'
+  
+  
+end
