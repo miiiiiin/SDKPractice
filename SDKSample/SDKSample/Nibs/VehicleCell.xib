@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumBarunGothicBold.otf">
+            <string>NanumBarunGothicOTFBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VehicleCell" id="lRJ-iN-HuH" customClass="VehicleCell" customModule="SDKSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="104"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lRJ-iN-HuH" id="VtE-qh-7FH">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vYH-jk-fLd">
+                        <rect key="frame" x="0.0" y="0.0" width="382" height="104"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="i8" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3V-1h-whW">
+                                <rect key="frame" x="20" y="18" width="322" height="23"/>
+                                <fontDescription key="fontDescription" name="NanumBarunGothicOTFBold" family="NanumBarunGothicOTF" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0N-Pv-UTt">
+                                <rect key="frame" x="342" y="16" width="24" height="24"/>
+                                <state key="normal" image="iconDelete"/>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CXF-vv-FyA">
+                                <rect key="frame" x="20" y="55" width="362" height="31"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bl3-pp-5iC">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="6" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VehicleInfoItemCell" id="zH7-p5-sPt" customClass="VehicleInfoItemCell" customModule="SDKSample" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="0.0" width="78" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SKj-lQ-eVV">
+                                            <rect key="frame" x="0.0" y="0.0" width="78" height="31"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="78" height="31"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="L3V-1h-whW" firstAttribute="leading" secondItem="vYH-jk-fLd" secondAttribute="leading" constant="20" symbolic="YES" id="CNr-5x-q0G"/>
+                            <constraint firstItem="M0N-Pv-UTt" firstAttribute="top" secondItem="vYH-jk-fLd" secondAttribute="top" constant="16" id="SPM-Ch-cQV"/>
+                            <constraint firstAttribute="trailing" secondItem="M0N-Pv-UTt" secondAttribute="trailing" constant="16" id="b7a-YR-ykF"/>
+                            <constraint firstItem="L3V-1h-whW" firstAttribute="trailing" secondItem="M0N-Pv-UTt" secondAttribute="trailing" constant="-24" id="iH2-49-tPd"/>
+                            <constraint firstItem="L3V-1h-whW" firstAttribute="top" secondItem="vYH-jk-fLd" secondAttribute="top" constant="18" id="khU-ZX-kNj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="vYH-jk-fLd" firstAttribute="top" secondItem="VtE-qh-7FH" secondAttribute="top" id="U6c-DN-ZSq"/>
+                    <constraint firstAttribute="bottom" secondItem="vYH-jk-fLd" secondAttribute="bottom" id="XrE-Yc-20L"/>
+                    <constraint firstAttribute="trailing" secondItem="vYH-jk-fLd" secondAttribute="trailing" id="e0u-w3-b8b"/>
+                    <constraint firstItem="vYH-jk-fLd" firstAttribute="leading" secondItem="VtE-qh-7FH" secondAttribute="leading" id="hKX-cR-LSB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="vYH-jk-fLd" id="hfL-R4-mfc"/>
+                <outlet property="deleteButton" destination="M0N-Pv-UTt" id="wxH-bX-aCw"/>
+                <outlet property="detailCollection" destination="CXF-vv-FyA" id="3g6-AB-pfe"/>
+                <outlet property="vehicleNameLabel" destination="L3V-1h-whW" id="O20-5U-5yj"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconDelete" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

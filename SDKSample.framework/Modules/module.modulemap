@@ -1,0 +1,11 @@
+framework module SDKSample {
+  umbrella header "SDKSample.h"
+
+  export *
+  module * { export * }
+}
+
+module SDKSample.Swift {
+    header "SDKSample-Swift.h"
+    requires objc
+}

@@ -1,0 +1,16 @@
+PODS:
+  - SDKPractice (0.1.0)
+
+DEPENDENCIES:
+  - SDKPractice (from `../`)
+
+EXTERNAL SOURCES:
+  SDKPractice:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SDKPractice: aa671d6f9d5e8cc4d2c445457a8cbe0685ac13cb
+
+PODFILE CHECKSUM: 80cf405cde674734d5220adfa4430ec8f16bcbc9
+
+COCOAPODS: 1.10.1

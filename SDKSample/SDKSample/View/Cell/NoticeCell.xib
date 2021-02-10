@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumBarunGothic.otf">
+            <string>NanumBarunGothicOTF</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoticeCell" rowHeight="70" id="NtE-Bs-cEh" customClass="NoticeCell" customModule="SDKSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NtE-Bs-cEh" id="OVw-hf-o7V">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N91-0r-x0N">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="종로 서비스 지속 안내" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="rrb-hl-oMx">
+                                <rect key="frame" x="14" y="18" width="313" height="16.5"/>
+                                <fontDescription key="fontDescription" name="NanumBarunGothicOTF" family="NanumBarunGothicOTF" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019.01.04" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMN-CI-eVg">
+                                <rect key="frame" x="14" y="39.5" width="313" height="13"/>
+                                <fontDescription key="fontDescription" name="NanumBarunGothicOTF" family="NanumBarunGothicOTF" pointSize="11"/>
+                                <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rrb-hl-oMx" firstAttribute="leading" secondItem="N91-0r-x0N" secondAttribute="leading" constant="14" id="1qE-eO-z0c"/>
+                            <constraint firstItem="cMN-CI-eVg" firstAttribute="leading" secondItem="N91-0r-x0N" secondAttribute="leading" constant="14" id="9xc-NR-wB6"/>
+                            <constraint firstItem="rrb-hl-oMx" firstAttribute="top" secondItem="N91-0r-x0N" secondAttribute="top" constant="18" id="Jpm-a6-aJJ"/>
+                            <constraint firstAttribute="trailing" secondItem="cMN-CI-eVg" secondAttribute="trailing" constant="16" id="vjm-Yd-VEu"/>
+                            <constraint firstAttribute="trailing" secondItem="rrb-hl-oMx" secondAttribute="trailing" constant="16" id="vw0-hB-eAv"/>
+                            <constraint firstItem="cMN-CI-eVg" firstAttribute="top" secondItem="rrb-hl-oMx" secondAttribute="bottom" constant="5" id="xIL-mW-aNU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="N91-0r-x0N" secondAttribute="bottom" id="76W-TU-Tcj"/>
+                    <constraint firstItem="N91-0r-x0N" firstAttribute="top" secondItem="OVw-hf-o7V" secondAttribute="top" id="8UD-Gc-7at"/>
+                    <constraint firstAttribute="trailing" secondItem="N91-0r-x0N" secondAttribute="trailing" id="8aJ-D9-tv6"/>
+                    <constraint firstItem="N91-0r-x0N" firstAttribute="leading" secondItem="OVw-hf-o7V" secondAttribute="leading" id="naX-Tv-rhZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="cMN-CI-eVg" id="IRg-0z-68w"/>
+                <outlet property="dateLbl" destination="cMN-CI-eVg" id="44V-m6-hQM"/>
+                <outlet property="noticeTitleLabel" destination="rrb-hl-oMx" id="zeH-2F-tcd"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="109"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,6 @@
+framework module SDKPractice {
+  umbrella header "SDKPractice-umbrella.h"
+
+  export *
+  module * { export * }
+}
