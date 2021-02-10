@@ -28,13 +28,15 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/miiiiiin/SDKPractice.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.swift_versions = ['4.2', '5.0']
-  s.ios.deployment_target = '13.0'
-  s.platform       = :ios, "13.0"
+  #s.ios.deployment_target = '13.0'
+  s.platform       = :ios, "9.0"
   s.frameworks = 'UIKit'
   #s.source_files = 'SDKPractice/Classes/**/*'
   s.dependency 'GoogleSignIn'
-  s.static_framework = true   
-  s.vendored_frameworks = 'SDKSample.framework'
+  s.static_framework = true 
+  s.module_name      = 'SDKPractice'  
+  s.preserve_paths = 'SDKPractice/Frameworks'
+  s.vendored_frameworks = 'SDKPractice/Frameworks/SDKSample.framework'
   # s.resource_bundles = {
   #   'SDKPractice' => ['SDKPractice/Assets/*.png']
   # }
