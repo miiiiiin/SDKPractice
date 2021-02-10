@@ -1,6 +1,0 @@
-framework module Pods_SDKPractice_Tests {
-  umbrella header "Pods-SDKPractice_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

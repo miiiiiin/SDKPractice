@@ -1,6 +1,11 @@
-use_frameworks!
-target 'SDKPractice_Tests' do
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'SDKPractice' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for SDKPractice
   pod 'SDKPractice', :path => '../'
-  
-  
+
 end

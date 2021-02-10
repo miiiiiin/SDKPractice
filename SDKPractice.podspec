@@ -31,12 +31,15 @@ TODO: Add long description of the pod here.
   #s.ios.deployment_target = '13.0'
   s.platform       = :ios, "9.0"
   s.frameworks = 'UIKit'
+  s.requires_arc = true
   #s.source_files = 'SDKPractice/Classes/**/*'
   s.dependency 'GoogleSignIn'
   s.static_framework = true 
-  s.module_name      = 'SDKPractice'  
-  s.preserve_paths = 'SDKPractice/Frameworks'
-  s.vendored_frameworks = 'SDKPractice/Frameworks/SDKSample.framework'
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  #s.module_name      = 'SDKPractice'  
+  #s.preserve_paths = 'SDKPractice/Frameworks'
+  s.vendored_frameworks = 'Frameworks/SDKSample.framework'
   # s.resource_bundles = {
   #   'SDKPractice' => ['SDKPractice/Assets/*.png']
   # }
